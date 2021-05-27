@@ -1,20 +1,60 @@
 body {
-    background: #c4c0c094;
+  background: #c4c0c094;
 }
-        h1 {
-            color: red;
-        }
-        h2 {
-            color: #1460aa;
-        }
-        p {
-            color: #1f8811;
-        }
-.hotpink-header
- {
-    color: hotpink;
+h1 {
+  color: red;
 }
-#top 
-{
-    background: #291850
+h2 {
+  color: #1460aa;
+}
+p {
+  color: #1f8811;
+}
+
+#top {
+  background: #291850;
+}
+.article {
+  color: rgb(61, 182, 81);
+}
+.image {
+  width: 400px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.header {
+  border: 3px black solid;
+  border-radius: 14px;
+}
+.main {
+  color: #376ea5;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.navigation {
+  background: rgb(59, 168, 78);
+  padding: 16px;
+  border-radius: 10px;
+}
+.navigation__link {
+  color: #ffff;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation__link--learning {
+  color: rgb(145, 51, 51);
+  background: #1c3a13;
+  padding: 4px;
+  border-radius: 7px;
+}
+.introduction {
+  color: hotpink;
+}
+.section {
+  border: 2px solid rgb(131, 9, 9);
+  padding: 10px;
+  border-radius: 10px;
+}
+.section__description {
+  color: hotpink;
 }

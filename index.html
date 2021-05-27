@@ -5,38 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>strona g00wna</title>
+    <title>Strona główna</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="nauka.html">NAUKA</a> 
+    <header class="header">
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--learning" href="index.html">Strona główna</a>
+            <a class="navigation__link navigation__link--learning" href="nauka.html">NAUKA</a> 
         </nav>
     </header>
-    <main>
-
+    <main class="main">
         <header id="top">
-            <h2>Konnek <b><i>"Konyyyyyy</i>"</b> Adrian</h2>
+            <h2 class="introduction">Konnek <b><i>"Konyyyyyy</i>"</b> Adrian</h2>
         </header>
-
         <section>
-
-            <h2 class="hotpink-header"> Kim jestem? (poza zwycięzcą?)</h2>
-
-            HEEeEEJKAa, na codzień jestem sobie taki mały Adi i staram się nauczyć programowania pracując dodatkowo na
-            etat. Albo w sumie odwrotnie - pracuje na etat przy obróbce stali dodatkowo ucząc się programować. :D
-
+            <h2 class="introduction"> Kim jestem?</h2>
+            <img src="me-in-spain.jpg" class="image" alt="me-in-spain" tittle="me-spain"> </br>
+            Hej, nazywam się Adrian i robię to wszystko po to, aby zostać programistą. 
         </section>
-        <section>
-            <h2>
+        <section class="section">
+            <h2 class="section__description">
                 Ile daje sobie czasu na naukę?
             </h2>
-            <article>
+            <article class="article">
                 <h3>
-                    W wielkim skrócie - pół roku.
+                    W wielkim skrócie - oby jak najmniej, serio, JEBAĆ OPERATORÓW MASZYN PRODUKCYJNYCH.
                 </h3>
                 <p> Podjąłem wyzwanie rzucone mi przez mojego braciszka, który udostępnił mi ten kursik.
 
@@ -45,17 +41,17 @@
                 </p>
                 <p><a href="#stopka">POKAZUJ DÓŁ STRONY PAJACU</a></p>
             </article>
-            <article>
-                <h3>Dlaczego pół roku?</h3>
+            <article class="article">
+                <h3 class="section__description">Dlaczego pół roku?</h3>
                 Ponieważ nauka jest podzielona na 12 tygodni, a to nie jedyna rzecz którą chce robić obecnie jestedm na
                 drugim lecz przyspieszam. Największym problemem
                 jest niestety ten jebany HalSpaw.
             </article>
-            <article>Kiedyś bardzo dużo czasu poświęcałem na granie w CS i oglądanie e-sportu na stronie <a
-                    href="http://hltv.org">HLTV</a></article>
+            <article class="article">Kiedyś bardzo dużo czasu poświęcałem na granie w CS i oglądanie e-sportu na stronie 
+                <a href="http://hltv.org"><i>HLTV</i></a></article>
         </section>
-        <footer id="stopka">
-            <h3>Strona domowa Adriana Konnka. <br/>
+        <footer class="section" id="stopka">
+            <h3 class="section__description">Strona domowa Adriana Konnka. <br/></h3>
                 Treść jest nieznacząca i jest tylko efektem szkolenia z <a href="https://cotenfrontend.pl">WTF: <i>Co ten
                     Frontend.</i></a></h3> <br/>
                 <a href="#top">DAWAJ NA GÓRĘ KUHHHWA</a>
