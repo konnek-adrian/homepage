@@ -38,3 +38,10 @@ population: 10000,
 }
 
 console.log(deathStar)
+
+const myClick = () => {
+  const heading = document.querySelector(".learning__heading");
+heading.innerHTML = `Ile chcę się uczyć?`;
+}
+const button = document.querySelector('.action--js');
+button.addEventListener('click', myClick);

@@ -10,11 +10,10 @@ html {
 
 body {
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(45deg, #FFA17F,#00223E);
+ min-width: 100%;
+ min-height:100%;
+ background-size: cover;;
 }
 h1 {
   color: red;
@@ -23,7 +22,7 @@ h2 {
   color: #1460aa;
 }
 p {
-  color: #2d971f;
+  color: #000000;
 }
 
 #top {
@@ -42,13 +41,25 @@ p {
   -webkit-text-fill-color: transparent;
 }
 .about__picture {
-  width: 400px;
+  width: 80%;
   border-radius: 50%;
   margin: 0 auto;
   border: 3px solid black;
 }
 .article {
-  color: rgb(40, 107, 51);
+  color: rgb(60, 160, 76);
+}
+.action--js{
+  padding: 6px;
+  border-radius: 20px;
+  background: #66c03c;
+}
+.header__form{
+  color: rgb(240, 231, 231);
+  position:center;
+  margin-left: 50%;
+  transform: translateX(-25%)
+  ;
 }
 .image {
   width: 400px;
@@ -61,8 +72,7 @@ p {
   border-radius: 10px;
   margin-top: 20px;
   background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);   
-);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);   );
 }
 .footer__heading {
   color: #1b1b1b;
@@ -108,4 +118,27 @@ p {
 }
 .learning__heading {
   color: hotpink;
+}
+.form{
+
+}
+.form__item{
+  display: block;
+  width: 300px
+
+}
+
+@media screen and (max-width: 600px)
+{
+  body {
+    background: lightgrey
+  }
+  .footer {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(40, 73, 73) 0%, rgb(100, 70, 6) 100%);   );
+  }
 }

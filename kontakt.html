@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nauka</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="header__links">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka.html">NAUKA</a>
+        <a class="navigation__link" href="kontakt.html">Kontakt</a>
+      </nav>
+    </header>
+    <main class="main">
+      <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+        <h1 class="header__form">Contact me!</h1>
+        <p>
+          <label for="firstName"> Your Name:</label>
+          <input
+            class="form__item"
+            type="text"
+            placeholder="Please enter your name"
+            name="firstName"
+            id="firstName"
+          />
+        </p>
+        <p>
+          <label for="lastName"> Your Last Name:</label>
+          <input
+            class="form__item"
+            type="text"
+            placeholder="Please enter your last name"
+            name="lastName"
+            id="lastName"
+          />
+        </p>
+        <fieldset>
+          <legend>Adres:</legend>
+          <p>
+            <label for="streetName"> Street Name:</label>
+            <input
+              class="form__item"
+              type="text"
+              placeholder=" Please enter your street name"
+              name="streetName"
+              id="streetName"
+            />
+          </p>
+          <p>
+            <label for="cityName"> City:</label>
+            <input
+              class="form__item"
+              type="text"
+              placeholder="Please enter your city"
+              name="cityName"
+              id="cityName"
+            />
+          </p>
+        </fieldset>
+        <p>
+          <label for="phoneNumber"> Phone number:</label>
+          <input
+            class="form__item"
+            type="tel"
+            placeholder="Please enter phone number"
+            name="phoneNumber"
+            id="phoneNumber"
+          />
+        </p>
+        <p>
+          <label for="email"> E-mail:</label>
+          <input
+            class="form__item"
+            type="email"
+            placeholder="Please enter your email"
+            name="email"
+            id="email"
+          />
+        </p>
+        <fieldset>
+            <legend>Your favourite flavour of ice:</legend>
+            <label>
+                <input name="iceCram" type="radio" value="chocolate"> Chocolate</label>
+                <input name="iceCram" type="radio" value="vanilla"> Vanilla</label>
+                <input name="iceCram" type="radio" value="strawberry"> Strawberry</label>
+                <input name="iceCram" type="radio" value="oreo"> Oreo</label>
+        </fieldset>
+        <p>
+          <label for="range">
+            How would you grade your feelings about my website?</label
+          >
+          <input
+            class="form__item"
+            type="range"
+            placeholder="Please enter your email"
+            name="range"
+            id="range"
+            min="0"
+            max="10"
+            step="1"
+          />
+        </p>
+        
+        <p>
+            <input
+              class="form__submit"
+              type="submit"
+              value="Send"
+            />
+          </p>
+      </form>
+      
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
