@@ -11,9 +11,8 @@ html {
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(45deg, #FFA17F,#00223E);
- min-width: 100%;
- min-height:100%;
- background-size: cover;;
+ height:100%;
+ background-size:cover;
 }
 h1 {
   color: red;
@@ -41,10 +40,13 @@ p {
   -webkit-text-fill-color: transparent;
 }
 .about__picture {
-  width: 80%;
+  width: 70%;
   border-radius: 50%;
   margin: 0 auto;
   border: 3px solid black;
+  display: block;
+  
+
 }
 .article {
   color: rgb(60, 160, 76);
@@ -53,6 +55,12 @@ p {
   padding: 6px;
   border-radius: 20px;
   background: #66c03c;
+}
+.header{
+  border-radius: 2px;
+  min-height: 60px;
+  min-width: 100%;
+  margin-top: 0;
 }
 .header__form{
   color: rgb(240, 231, 231);
@@ -72,27 +80,23 @@ p {
   border-radius: 10px;
   margin-top: 20px;
   background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);   );
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);   
 }
 .footer__heading {
   color: #1b1b1b;
 }
-.header__links {
-  border: 3px black solid;
-  border-radius: 14px;
-}
 .main {
   color: #376ea5;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto ;
 }
 .main__header {
   background: black;
 }
 .navigation {
-  background: rgb(59, 168, 78);
+  background: rgb(47, 110, 57);
   padding: 16px;
-  border-radius: 10px;
+  border-radius: 2px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -101,12 +105,6 @@ p {
   color: rgb(255, 255, 255);
   display: inline-block;
   margin-right: 20px;
-}
-.navigation__link--learning {
-  color: rgb(145, 51, 51);
-  background: #1c3a13;
-  padding: 4px;
-  border-radius: 7px;
 }
 .main__introduction {
   color: hotpink;
@@ -125,7 +123,9 @@ p {
 .form__item{
   display: block;
   width: 300px
-
+}
+.hamburger{
+  display:none;
 }
 
 @media screen and (max-width: 600px)
@@ -139,6 +139,33 @@ p {
     border-radius: 10px;
     margin-top: 20px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(40, 73, 73) 0%, rgb(100, 70, 6) 100%);   );
+    background: linear-gradient(0deg, rgb(40, 73, 73) 0%, rgb(100, 70, 6) 100%);   
+  }
+  .navigation {
+    display:none;
+  }
+    .navigation__link {
+      display: block;
+      color: rgb(255, 255, 255);
+      margin-bottom: 20px; 
+      padding: 16px;
+  }
+  .navigation--open{
+    display: block;
+    width: 30vh;
+  }
+  .header{ 
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+  }
+  .main{
+    margin-top: 60px;
+  }
+  .hamburger {
+    display:unset;
+    position:absolute;
+    top: 16px;
+    right: 16px;
   }
 }

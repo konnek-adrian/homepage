@@ -45,3 +45,18 @@ heading.innerHTML = `Ile chcę się uczyć?`;
 }
 const button = document.querySelector('.action--js');
 button.addEventListener('click', myClick);
+
+const navBar = document.querySelector('.navigation');
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    navBar.classList.add('navigation--open'); 
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    navBar.classList.remove('navigation--open'); 
+    menuOpen = false;
+  }
+});

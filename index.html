@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="hamb.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
-    <header class="header__links">
+    <header class="header">
         <nav class="navigation">
             <a class="navigation__link" href="index.html">Strona główna</a>
             <a class="navigation__link" href="nauka.html">NAUKA</a> 
             <a class="navigation__link" href="kontakt.html">Kontakt</a> 
-            <a class="navigation__link" href="hamb.html">HAMB</a> 
         </nav>
+        <div class="hamburger">
+            <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
     </header>
     <main class="main">
         <header class="main__header" id="top">
@@ -26,8 +30,8 @@
         </header>
         <section class="about">
             <h2 class="about__heading"> Kim jestem?</h2>
-            <img src="me-in-spain.jpg" class="about__picture" alt="me-in-spain" tittle="me-spain"> </br>
-            Hej, nazywam się Adrian i robię to wszystko po to, aby zostać programistą. 
+            <img src="me-in-spain.jpg" class="about__picture" alt="me-in-spain" tittle="me-spain"> 
+           <p>Hej, nazywam się Adrian i robię to wszystko po to, aby zostać programistą. </p>
         </section>
         <section class="learning">
             <h2 class="learning__heading">
@@ -36,7 +40,7 @@
             <button class="action--js">ZMIEŃ pytanie</button>
             <article class="about">
                 <h3 class="about__heading about__heading--js">
-                    W wielkim skrócie - oby jak najmniej, serio, JEBAĆ OPERATORÓW MASZYN PRODUKCYJNYCH.
+                    W wielkim skrócie - oby jak najmniej, serio.
                 </h3>
                 <p> Podjąłem wyzwanie rzucone mi przez mojego braciszka, który udostępnił mi ten kursik. </br>
                 Jeżeli to czytasz to wielkie dzieki, młody.
